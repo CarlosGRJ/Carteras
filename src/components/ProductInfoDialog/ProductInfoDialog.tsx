@@ -1,46 +1,83 @@
-import React from 'react';
+'use client';
+
+import React, { useEffect } from 'react';
 import { Button } from '../ui/button';
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogTitle,
   DialogTrigger,
-} from '@radix-ui/react-dialog';
-import { DialogFooter, DialogHeader } from '../ui/dialog';
-import { Label } from '@radix-ui/react-label';
-import { Input } from '../ui/input';
+} from '@/components/ui/dialog';
 
-function ProductInfoDialog() {
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  type CarouselApi,
+} from '@/components/ui/carousel';
+import Image from 'next/image';
+
+interface ProductInfoDialogProps {
+  title: string;
+  previews: string[];
+  id: string;
+}
+
+function ProductInfoDialog({
+  title = 'No title',
+  previews,
+  id,
+}: ProductInfoDialogProps) {
+  const [api, setApi] = React.useState<CarouselApi>();
+  const [current, setCurrent] = React.useState(0);
+  const [count, setCount] = React.useState(0);
+
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap() + 1);
+
+    api.on('select', () => {
+      setCurrent(api.selectedScrollSnap() + 1);
+    });
+  }, [api]);
+
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant='outline'>Edit Profile</Button>
+        <Button variant='outline'>Ver cartera</Button>
       </DialogTrigger>
-      <DialogContent className='sm:max-w-[425px]'>
-        <DialogHeader>
-          <DialogTitle>Edit profile</DialogTitle>
-          <DialogDescription>
-            Make changes to your profile here. Click save when you're done.
-          </DialogDescription>
-        </DialogHeader>
-        <div className='grid gap-4 py-4'>
-          <div className='grid grid-cols-4 items-center gap-4'>
-            <Label htmlFor='name' className='text-right'>
-              Name
-            </Label>
-            <Input id='name' value='Pedro Duarte' className='col-span-3' />
-          </div>
-          <div className='grid grid-cols-4 items-center gap-4'>
-            <Label htmlFor='username' className='text-right'>
-              Username
-            </Label>
-            <Input id='username' value='@peduarte' className='col-span-3' />
+
+      <DialogContent>
+        <DialogTitle>{title}</DialogTitle>
+
+        <div className='mx-auto max-w-xs'>
+          <Carousel setApi={setApi} className='w-full max-w-xs'>
+            <CarouselContent>
+              {previews.map((preview, i) => (
+                <CarouselItem key={`${id}-${i}`}>
+                  <Image
+                    className='rounded-xl object-contain w-full h-auto'
+                    src={preview}
+                    width={600}
+                    height={600}
+                    alt={`${title} - vista ${i + 1}`}
+                  />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+          <div className='py-2 text-center text-sm text-muted-foreground'>
+            Slide {current} of {count}
           </div>
         </div>
-        <DialogFooter>
-          <Button type='submit'>Save changes</Button>
-        </DialogFooter>
       </DialogContent>
     </Dialog>
   );

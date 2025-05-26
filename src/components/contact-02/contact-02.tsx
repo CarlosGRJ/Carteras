@@ -1,6 +1,5 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Checkbox } from '@/components/ui/checkbox';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
@@ -8,12 +7,23 @@ import { MailIcon, PhoneIcon } from 'lucide-react';
 import Link from 'next/link';
 
 const Contact02Page = () => (
-  <div className='min-h-screen flex items-center justify-center py-16 px-20 bg-white'>
-    <div className='w-full max-w-screen-xl mx-auto px-6 xl:px-0'>
-      <b className='text-muted-foreground'>Contáctame</b>
-      <h2 className='mt-3 text-3xl md:text-4xl font-bold tracking-tight'>
+  <section
+    id='contact'
+    className='min-h-screen flex items-center justify-center py-16 px-10 sm:px-20 bg-white'>
+    <div className='w-full max-w-screen-xl mx-auto xl:px-0'>
+      {/* <b className='text-muted-foreground'>Contáctame</b> */}
+      {/* <h2 className='mt-3 text-3xl md:text-4xl font-bold tracking-tight'>
         ¿Tienes dudas? Escríbeme directamente
+      </h2> */}
+
+      <h2 className='mb-3 text-xl font-semibold md:mb-4 md:text-4xl lg:mb-6'>
+        Contáctame
       </h2>
+
+      <b className='text-muted-foreground'>
+        ¿Tienes dudas? Escríbeme directamente
+      </b>
+
       <p className='mt-3 text-base sm:text-lg'>
         Puedes escribirme por WhatsApp, rellenar el formulario o mandarme un
         correo directamente.
@@ -41,7 +51,7 @@ const Contact02Page = () => (
             </div>
             <h3 className='mt-6 font-semibold text-xl'>Teléfono</h3>
             <p className='my-2.5 text-muted-foreground'>
-              Lun-Vi from 9am to 6pm.
+              Lu-Vi from 9am to 6pm.
             </p>
             <Link className='font-medium text-primary' href='tel:+525541934044'>
               +52 55 4193 4044
@@ -97,7 +107,7 @@ const Contact02Page = () => (
         </Card>
       </div>
     </div>
-  </div>
+  </section>
 );
 
 export default Contact02Page;

@@ -32,6 +32,7 @@ export const Womanfeatures: Feature[] = [
     description:
       'Clean and intuitive interface built with the latest design principles. Optimized for the best user experience.',
     image: '/images/covers/woman/003_cartera_blanca.webp',
+    previews: ['/images/previews/woman/003_cartera_blanca_preview.webp'],
   },
   {
     id: 'feature-2',
@@ -39,6 +40,10 @@ export const Womanfeatures: Feature[] = [
     description:
       'Clean and intuitive interface built with the latest design principles. Optimized for the best user experience.',
     image: '/images/covers/woman/004_cartera_negra_broche.webp',
+    previews: [
+      '/images/previews/woman/004_cartera_negra_broche_preview.webp',
+      '/images/previews/woman/004_cartera_negra_abierta_preview.webp',
+    ],
   },
   {
     id: 'feature-3',
@@ -46,6 +51,7 @@ export const Womanfeatures: Feature[] = [
     description:
       'Clean and intuitive interface built with the latest design principles. Optimized for the best user experience.',
     image: '/images/covers/woman/005_cartera_md_negra.webp',
+    previews: ['/images/previews/woman/005_cartera_md_negra_preview.webp'],
   },
   {
     id: 'feature-4',
@@ -53,6 +59,10 @@ export const Womanfeatures: Feature[] = [
     description:
       'Clean and intuitive interface built with the latest design principles. Optimized for the best user experience.',
     image: '/images/covers/woman/007_cartera_blanca_broche.webp',
+    previews: [
+      '/images/previews/woman/007_cartera_blanca_broche_preview.webp',
+      '/images/previews/woman/007_cartera_blanca_broche_abierta_preview.webp',
+    ],
   },
   {
     id: 'feature-5',
@@ -60,6 +70,7 @@ export const Womanfeatures: Feature[] = [
     description:
       'Clean and intuitive interface built with the latest design principles. Optimized for the best user experience.',
     image: '/images/covers/woman/008_cartera_blanca_logos.webp',
+    previews: ['/images/previews/woman/008_cartera_blanca_logos_preview.webp'],
   },
 ];
 
@@ -70,6 +81,10 @@ export const Manfeatures: Feature[] = [
     description:
       'Clean and intuitive interface built with the latest design principles. Optimized for the best user experience.',
     image: '/images/covers/man/001_cartera_negra.webp',
+    previews: [
+      '/images/previews/man/001_cartera_negra_preview.webp',
+      '/images/previews/man/001_cartera_negra_abierta_preview.webp',
+    ],
   },
   {
     id: 'feature-2',
@@ -77,6 +92,7 @@ export const Manfeatures: Feature[] = [
     description:
       'Clean and intuitive interface built with the latest design principles. Optimized for the best user experience.',
     image: '/images/covers/man/002_cartera_cafe.webp',
+    previews: ['/images/previews/man/002_cartera_cafe_preview.webp'],
   },
   {
     id: 'feature-3',
@@ -84,5 +100,9 @@ export const Manfeatures: Feature[] = [
     description:
       'Clean and intuitive interface built with the latest design principles. Optimized for the best user experience.',
     image: '/images/covers/man/006_cartera_cafe_logos.webp',
+    previews: [
+      '/images/previews/man/006_cartera_cafe_logos_preview.webp',
+      '/images/previews/man/006_cartera_cafe_logos_abierta_preview.webp',
+    ],
   },
 ];

@@ -5,6 +5,7 @@ export interface Feature {
   title: string;
   description: string;
   image: string;
+  previews: string[];
 }
 
 interface Feature72Props {
@@ -26,41 +27,12 @@ const Feature72 = ({
   heading = 'Powerful Features',
   description = 'Discover the powerful features that make our platform stand out from the rest. Built with the latest technology and designed for maximum productivity.',
   backgroundColor = 'hombre',
-  features = [
-    {
-      id: 'feature-1',
-      title: 'Modern Design',
-      description:
-        'Clean and intuitive interface built with the latest design principles. Optimized for the best user experience.',
-      image: 'https://www.shadcnblocks.com/images/block/placeholder-1.svg',
-    },
-    {
-      id: 'feature-2',
-      title: 'Responsive Layout',
-      description:
-        'Fully responsive design that works seamlessly across all devices and screen sizes. Perfect for any platform.',
-      image: 'https://www.shadcnblocks.com/images/block/placeholder-2.svg',
-    },
-    {
-      id: 'feature-3',
-      title: 'Easy Integration',
-      description:
-        'Simple integration process with comprehensive documentation and dedicated support team.',
-      image: 'https://www.shadcnblocks.com/images/block/placeholder-3.svg',
-    },
-    {
-      id: 'feature-4',
-      title: 'Advanced Analytics',
-      description:
-        'Powerful analytics tools to help you understand your users and make data-driven decisions.',
-      image: 'https://www.shadcnblocks.com/images/block/placeholder-4.svg',
-    },
-  ],
+  features = [],
 }: Feature72Props) => {
   return (
     <section
       id={sectionId}
-      className={`py-32 ${backgroundMap[backgroundColor] ?? ''}`}>
+      className={`p-10 py-32 ${backgroundMap[backgroundColor] ?? ''}`}>
       <div className='container flex flex-col gap-16 lg:px-16'>
         <div className='lg:max-w-sm'>
           <h2 className='mb-3 text-xl font-semibold md:mb-4 md:text-4xl lg:mb-6'>
@@ -88,8 +60,15 @@ const Feature72 = ({
                 <p className='text-muted-foreground lg:text-lg'>
                   {feature.description}
                 </p>
+
+                <div className='mt-6'>
+                  <ProductInfoDialog
+                    id={feature.id}
+                    title={feature.id}
+                    previews={feature.previews}
+                  />
+                </div>
               </div>
-              <ProductInfoDialog />
             </div>
           ))}
         </div>
