@@ -1,25 +1,10 @@
 import { AspectRatio } from '@/components/ui/aspect-ratio';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Button } from '@/components/ui/button';
-import Image from 'next/image';
 
-interface Testimonial {
-  quote: string;
-  author: string;
-  avatars: Array<{
-    image: string;
-    fallback: string;
-  }>;
-}
+import Image from 'next/image';
 
 interface Hero151Props {
   heading?: string;
   description?: string;
-  button?: {
-    text: string;
-    url: string;
-  };
-  testimonial?: Testimonial;
   images: {
     first: string;
     second: string;
@@ -31,28 +16,7 @@ interface Hero151Props {
 const Hero151 = ({
   heading = 'Diseño elegante en cada detalle.',
   description = 'Cada pieza está diseñada para ofrecerte elegancia, comodidad y presencia.',
-  button = {
-    text: 'Get Started',
-    url: '#',
-  },
-  testimonial = {
-    quote: 'Justo lo que buscaba: elegante y práctica.',
-    author: 'Carlos Rojas',
-    avatars: [
-      {
-        image: 'https://shadcnblocks.com/images/block/avatar-1.webp',
-        fallback: 'AB',
-      },
-      {
-        image: 'https://shadcnblocks.com/images/block/avatar-2.webp',
-        fallback: 'CD',
-      },
-      {
-        image: 'https://shadcnblocks.com/images/block/avatar-3.webp',
-        fallback: 'EF',
-      },
-    ],
-  },
+
   images = {
     first: 'https://shadcnblocks.com/images/block/placeholder-1.svg',
     second: 'https://shadcnblocks.com/images/block/placeholder-dark-2.svg',
@@ -72,12 +36,12 @@ const Hero151 = ({
               {description}
             </p>
           </div>
-          <div className='my-6 lg:my-10'>
+          {/* <div className='my-6 lg:my-10'>
             <Button asChild size='lg'>
               <a href={button.url}>{button.text}</a>
             </Button>
-          </div>
-          <div className='flex flex-wrap items-center gap-3'>
+          </div> */}
+          {/* <div className='flex flex-wrap items-center gap-3'>
             <div className='relative flex -space-x-[1.5rem]'>
               {testimonial.avatars.map((avatar, index) => (
                 <Avatar
@@ -98,7 +62,7 @@ const Hero151 = ({
                 {testimonial.author}
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className='w-full flex-1'>
           <div className='w-full max-w-[50rem]'>

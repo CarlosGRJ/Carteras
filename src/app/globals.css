@@ -113,3 +113,13 @@
     @apply bg-background text-foreground;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}

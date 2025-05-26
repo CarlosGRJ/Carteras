@@ -18,6 +18,7 @@ import {
   type CarouselApi,
 } from '@/components/ui/carousel';
 import Image from 'next/image';
+import { DialogDescription } from '@radix-ui/react-dialog';
 
 interface ProductInfoDialogProps {
   title: string;
@@ -50,12 +51,13 @@ function ProductInfoDialog({
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant='outline'>Ver cartera</Button>
+        <Button variant='outline'>Ver más</Button>
       </DialogTrigger>
 
       <DialogContent>
         <DialogTitle>{title}</DialogTitle>
 
+        <DialogDescription>{}</DialogDescription>
         <div className='mx-auto max-w-xs'>
           <Carousel setApi={setApi} className='w-full max-w-xs'>
             <CarouselContent>

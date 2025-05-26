@@ -27,18 +27,18 @@ import { Feature } from '@/components/feature72';
 
 export const Womanfeatures: Feature[] = [
   {
-    id: 'feature-1',
-    title: 'Modern Design',
+    id: 'woman-feature-1',
+    title: 'Monedero Blanco',
     description:
-      'Clean and intuitive interface built with the latest design principles. Optimized for the best user experience.',
+      'Monedero blanco con textura fina y detalle dorado de la marca Coach. Práctico y elegante para llevar lo esencial: tarjetas, llaves o cosméticos. Perfecto para salidas rápidas, eventos o complementar tu outfit diario.',
     image: '/images/covers/woman/003_cartera_blanca.webp',
     previews: ['/images/previews/woman/003_cartera_blanca_preview.webp'],
   },
   {
-    id: 'feature-2',
-    title: 'Modern Design',
+    id: 'woman-feature-2',
+    title: 'Cartera Negra con Broche y Cierre',
     description:
-      'Clean and intuitive interface built with the latest design principles. Optimized for the best user experience.',
+      'Cartera negra con broche frontal y cierre dorado para monedas. Interior organizado con espacio para tarjetas y billetes. Una pieza elegante y segura, ideal para uso diario o salidas especiales.',
     image: '/images/covers/woman/004_cartera_negra_broche.webp',
     previews: [
       '/images/previews/woman/004_cartera_negra_broche_preview.webp',
@@ -46,18 +46,18 @@ export const Womanfeatures: Feature[] = [
     ],
   },
   {
-    id: 'feature-3',
-    title: 'Modern Design',
+    id: 'woman-feature-3',
+    title: 'Monedero Negro',
     description:
-      'Clean and intuitive interface built with the latest design principles. Optimized for the best user experience.',
+      'Monedero negro con textura sutil y logotipo dorado al frente. Su correa de mano lo hace práctico para llevar solo o dentro de tu bolsa. El accesorio perfecto para guardar tus esenciales con elegancia y discreción.',
     image: '/images/covers/woman/005_cartera_md_negra.webp',
     previews: ['/images/previews/woman/005_cartera_md_negra_preview.webp'],
   },
   {
-    id: 'feature-4',
-    title: 'Modern Design',
+    id: 'woman-feature-4',
+    title: 'Cartera Blanca con Broche',
     description:
-      'Clean and intuitive interface built with the latest design principles. Optimized for the best user experience.',
+      'Cartera de piel blanca con broche dorado al frente y diseño texturizado con el logo característico de Coach. Interior amplio con compartimentos para tarjetas, billetes y monedas. Su tono neutro y elegante la hace ideal para cualquier ocasión.',
     image: '/images/covers/woman/007_cartera_blanca_broche.webp',
     previews: [
       '/images/previews/woman/007_cartera_blanca_broche_preview.webp',
@@ -65,10 +65,10 @@ export const Womanfeatures: Feature[] = [
     ],
   },
   {
-    id: 'feature-5',
-    title: 'Modern Design',
+    id: 'woman-feature-5',
+    title: 'Monedero con Logos Coach',
     description:
-      'Clean and intuitive interface built with the latest design principles. Optimized for the best user experience.',
+      'Monedero de mano en tono blanco con el clásico patrón de logos Coach en relieve. Diseño con franja beige central y detalle metálico de la marca. Incluye correa para llevarlo cómodamente en la muñeca. Ideal para llevar lo esencial con estilo.',
     image: '/images/covers/woman/008_cartera_blanca_logos.webp',
     previews: ['/images/previews/woman/008_cartera_blanca_logos_preview.webp'],
   },
@@ -76,10 +76,10 @@ export const Womanfeatures: Feature[] = [
 
 export const Manfeatures: Feature[] = [
   {
-    id: 'feature-1',
-    title: 'Modern Design',
+    id: 'man-feature-1',
+    title: 'Cartera Negra',
     description:
-      'Clean and intuitive interface built with the latest design principles. Optimized for the best user experience.',
+      'Diseño elegante negra con grabado clásico de la marca. Cuenta con múltiples compartimentos para tarjetas y una billetera desmontable interior. Ideal para quienes buscan estilo y funcionalidad en un solo accesorio.',
     image: '/images/covers/man/001_cartera_negra.webp',
     previews: [
       '/images/previews/man/001_cartera_negra_preview.webp',
@@ -87,18 +87,18 @@ export const Manfeatures: Feature[] = [
     ],
   },
   {
-    id: 'feature-2',
-    title: 'Modern Design',
+    id: 'man-feature-2',
+    title: 'Cartera Café',
     description:
-      'Clean and intuitive interface built with the latest design principles. Optimized for the best user experience.',
+      'Cartera clásica en tono café, con grabado discreto de la marca. Diseño sobrio y elegante con compartimentos internos para tarjetas y billetes. Perfecta para quienes valoran la calidad y el estilo tradicional.',
     image: '/images/covers/man/002_cartera_cafe.webp',
     previews: ['/images/previews/man/002_cartera_cafe_preview.webp'],
   },
   {
-    id: 'feature-3',
-    title: 'Modern Design',
+    id: 'man-feature-3',
+    title: 'Cartera Café con Logos Coach',
     description:
-      'Clean and intuitive interface built with the latest design principles. Optimized for the best user experience.',
+      'Cartera de piel en tono café con diseño de logos Coach. Interior funcional con múltiples compartimentos y billetera desmontable. Un accesorio con personalidad para quienes buscan destacar con elegancia.',
     image: '/images/covers/man/006_cartera_cafe_logos.webp',
     previews: [
       '/images/previews/man/006_cartera_cafe_logos_preview.webp',

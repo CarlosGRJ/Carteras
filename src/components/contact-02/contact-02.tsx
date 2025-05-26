@@ -11,11 +11,6 @@ const Contact02Page = () => (
     id='contact'
     className='min-h-screen flex items-center justify-center py-16 px-10 sm:px-20 bg-white'>
     <div className='w-full max-w-screen-xl mx-auto xl:px-0'>
-      {/* <b className='text-muted-foreground'>Contáctame</b> */}
-      {/* <h2 className='mt-3 text-3xl md:text-4xl font-bold tracking-tight'>
-        ¿Tienes dudas? Escríbeme directamente
-      </h2> */}
-
       <h2 className='mb-3 text-xl font-semibold md:mb-4 md:text-4xl lg:mb-6'>
         Contáctame
       </h2>
@@ -40,8 +35,8 @@ const Contact02Page = () => (
             </p>
             <Link
               className='font-medium text-primary'
-              href='mailto:akashmoradiya3444@gmail.com'>
-              akashmoradiya3444@gmail.com
+              href='mailto:erikavillap73@gmail.com'>
+              erikavillap73@gmail.com
             </Link>
           </div>
 

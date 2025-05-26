@@ -1,10 +1,4 @@
 import { Separator } from '@/components/ui/separator';
-import {
-  DribbbleIcon,
-  GithubIcon,
-  TwitchIcon,
-  TwitterIcon,
-} from 'lucide-react';
 import Link from 'next/link';
 
 const footerLinks = [
@@ -21,15 +15,13 @@ const footerLinks = [
     href: '#man',
   },
   {
-    title: 'Testimonios',
-    href: '#testimonials',
+    title: 'Contacto',
+    href: '#contact',
   },
 ];
 
 const Footer05Page = () => {
   return (
-    // <div className='min-h-screen flex flex-col'>
-    //   <div className='grow bg-muted' />
     <footer>
       <div className='max-w-screen-xl mx-auto'>
         <div className='py-12 flex flex-col justify-start items-center'>
@@ -64,31 +56,15 @@ const Footer05Page = () => {
           </ul>
         </div>
         <Separator />
-        <div className='py-8 flex flex-col-reverse sm:flex-row items-center justify-between gap-x-2 gap-y-5 px-6 xl:px-0'>
+        <div className='py-8 text-center'>
           {/* Copyright */}
           <span className='text-muted-foreground'>
-            &copy; {new Date().getFullYear()} Nombre de la marca. Todos
-            los derechos reservados. Sitio desarrollado por Carlos Rojas.
+            &copy; {new Date().getFullYear()} Nombre de la marca. Todos los
+            derechos reservados. Sitio desarrollado por Carlos Rojas.
           </span>
-
-          <div className='flex items-center gap-5 text-muted-foreground'>
-            <Link href='#' target='_blank'>
-              <TwitterIcon className='h-5 w-5' />
-            </Link>
-            <Link href='#' target='_blank'>
-              <DribbbleIcon className='h-5 w-5' />
-            </Link>
-            <Link href='#' target='_blank'>
-              <TwitchIcon className='h-5 w-5' />
-            </Link>
-            <Link href='#' target='_blank'>
-              <GithubIcon className='h-5 w-5' />
-            </Link>
-          </div>
         </div>
       </div>
     </footer>
-    // </div>
   );
 };
 

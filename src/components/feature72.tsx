@@ -32,7 +32,7 @@ const Feature72 = ({
   return (
     <section
       id={sectionId}
-      className={`p-10 py-32 ${backgroundMap[backgroundColor] ?? ''}`}>
+      className={`p-10 py-20 ${backgroundMap[backgroundColor] ?? ''}`}>
       <div className='container flex flex-col gap-16 lg:px-16'>
         <div className='lg:max-w-sm'>
           <h2 className='mb-3 text-xl font-semibold md:mb-4 md:text-4xl lg:mb-6'>
@@ -64,7 +64,7 @@ const Feature72 = ({
                 <div className='mt-6'>
                   <ProductInfoDialog
                     id={feature.id}
-                    title={feature.id}
+                    title={feature.title}
                     previews={feature.previews}
                   />
                 </div>
