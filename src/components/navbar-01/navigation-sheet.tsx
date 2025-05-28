@@ -1,7 +1,13 @@
 'use client';
 
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetTitle,
+  SheetTrigger,
+} from '@/components/ui/sheet';
 import { Menu } from 'lucide-react';
 import { NavMenu } from './nav-menu';
 import Logo from '../ui/Logo';
@@ -18,6 +24,8 @@ export const NavigationSheet = () => {
         </Button>
       </SheetTrigger>
       <SheetContent>
+        <SheetTitle></SheetTitle>
+        <SheetDescription></SheetDescription>
         <Logo />
         <NavMenu
           orientation='vertical'
