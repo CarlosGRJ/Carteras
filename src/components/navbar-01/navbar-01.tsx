@@ -1,11 +1,11 @@
 'use client';
 
 import { Button } from '@/components/ui/button';
-import { Logo } from './logo';
 import { NavMenu } from './nav-menu';
 import { NavigationSheet } from './navigation-sheet';
 import { MessageSquare } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import Logo from '../ui/Logo';
 
 const Navbar01Page = () => {
   const [isSticky, setIsSticky] = useState(false);

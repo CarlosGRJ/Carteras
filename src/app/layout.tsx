@@ -1,13 +1,19 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import Navbar01Page from '@/components/navbar-01/navbar-01';
 import Footer05Page from '@/components/footer-05/footer-05';
+import { Toaster } from '@/components/ui/toaster';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
   subsets: ['latin'],
 });
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+};
 
 const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
@@ -29,35 +35,32 @@ export const metadata: Metadata = {
     'accesorios de moda',
     'regalos elegantes',
   ],
-  authors: [
-    { name: 'Carlos Rojas', url: 'https://carlosgrj.netlify.app/home' },
-  ],
+  authors: [{ name: 'Carlos Rojas', url: 'https://www.carlosrojasj.dev/' }],
   creator: 'Carlos Rojas',
-  metadataBase: new URL('https://carteras.tudominio.com'),
+  metadataBase: new URL('https://www.erikavillap.com/'),
   openGraph: {
     title: 'Carteras y Monederos Coach | Venta en CDMX',
     description:
       'Compra carteras y monederos originales Coach. Diseños para mujer y hombre. Elegancia, estilo y envío rápido desde Ciudad de México.',
-    url: 'https://carteras.tudominio.com',
+    url: 'https://www.erikavillap.com/',
     siteName: 'Carteras y Monederos Coach',
     locale: 'es_MX',
     type: 'website',
     images: [
       {
-        url: 'https://carteras.tudominio.com/images/cover_home.webp',
+        url: 'https://www.erikavillap.com/images/cover_home.webp',
         width: 1200,
         height: 630,
         alt: 'Carteras y monederos Coach',
       },
     ],
   },
-  viewport: 'width=device-width, initial-scale=1',
   twitter: {
     card: 'summary_large_image',
     title: 'Carteras y Monederos Coach en CDMX',
     description:
       'Elegancia y estilo en cada detalle. Explora nuestra colección de carteras y monederos Coach originales.',
-    images: ['https://carteras.tudominio.com/images/cover_home.webp'],
+    images: ['https://www.erikavillap.com/images/cover_home.webp'],
   },
   robots: {
     index: true,
@@ -68,6 +71,9 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  alternates: {
+    canonical: 'https://www.erikavillap.com/',
+  },
 };
 
 export default function RootLayout({
@@ -76,7 +82,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
+    <html lang='es'>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <div className='px-0 sm:px-6 md:px-10 lg:px-16 xl:px-24 max-w-screen-2xl mx-auto'>
@@ -84,6 +90,7 @@ export default function RootLayout({
           {children}
           <Footer05Page />
         </div>
+        <Toaster />
       </body>
     </html>
   );

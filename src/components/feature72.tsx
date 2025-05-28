@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import ProductInfoDialog from './ProductInfoDialog/ProductInfoDialog';
 
 export interface Feature {
@@ -47,7 +48,10 @@ const Feature72 = ({
               key={feature.id}
               className='flex flex-col overflow-clip rounded-xl border border-border'>
               <div>
-                <img
+                <Image
+                  width={100}
+                  height={100}
+                  unoptimized
                   src={feature.image}
                   alt={feature.title}
                   className='aspect-16/9 h-full w-full object-cover object-center'
