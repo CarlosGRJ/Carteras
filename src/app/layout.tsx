@@ -34,6 +34,7 @@ export const metadata: Metadata = {
     'Coach México',
     'accesorios de moda',
     'regalos elegantes',
+    'Erika Villa',
   ],
   authors: [{ name: 'Carlos Rojas', url: 'https://www.carlosrojasj.dev/' }],
   creator: 'Carlos Rojas',
