@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Carteras y Monederos Coach | Venta en CDMX',
     description:
-      'Compra carteras y monederos originales Coach. Diseños para mujer y hombre. Elegancia, estilo y envío rápido desde Ciudad de México.',
+      'Elegancia y estilo en cada detalle. Explora nuestra colección de carteras y monederos Coach originales.',
     url: 'https://www.erikavillap.com/',
     siteName: 'Carteras y Monederos Coach',
     locale: 'es_MX',
