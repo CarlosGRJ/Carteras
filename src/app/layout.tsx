@@ -75,6 +75,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.erikavillap.com/',
   },
+  other: {
+    'google-site-verification': 'RMOecmBD_GIPxHBMrsaJc9jE07wJ2CT_eKnEeyAtGPQ',
+  },
 };
 
 export default function RootLayout({
